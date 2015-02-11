@@ -58,18 +58,21 @@ private:
 	public:
 		Directory_Entry() {} // Default no argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
-			//constructor not yet implemented
+			_name = the_name;
+			_number = the_number;
 		}
 		std::string get_name() const {
-			return ""; // method not yet implemented
+			return _name; 
 		}
 		std::string get_number() const {
-			return ""; // method not implemented yet
+			return _number; 
 		}
 		void set_number(const std::string& new_number) {
-			// method not implemented yet
+			_number = new_number;
 		}
 	private:
+		std::string _name;
+		std::string _number;
 
 	};
 
