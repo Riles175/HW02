@@ -16,6 +16,8 @@ void do_save(Phone_Directory&);
 
 int main(int argc, char* argv[])
 {
+	argc = 2;
+	argv[1] = "directory.txt";
 	if (argc < 2) {
 		cerr << "Must specify the name of the data file"
 			" that contains the directory\n";
